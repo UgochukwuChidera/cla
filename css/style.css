@@ -1,0 +1,54 @@
+/* Add Outfit font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d6e2f0;
+}
+
+.content {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    padding: 24px;
+    max-width: 320px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0 0 12px 0;
+    color: #1f3251;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #7b879d;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}

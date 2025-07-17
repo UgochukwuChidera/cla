@@ -1,0 +1,121 @@
+body {
+  background: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  max-width: 950px;
+  margin: 5vw auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  background: transparent;
+  min-height: 60vh;
+  gap: 0;
+}
+
+.column {
+  flex: 1;
+  padding: 4vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  min-width: 0;
+}
+
+.column img {
+  width: 90px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.column h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 95%);
+  margin: 0;
+}
+
+.column p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sedans {
+  background: hsl(31, 77%, 52%);
+}
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+.luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+.btn {
+  background: hsl(0, 0%, 95%);
+  color: inherit;
+  border: none;
+  border-radius: 24px;
+  padding: 16px 40px;
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+  margin-top: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.sedans .btn { color: hsl(31, 77%, 52%); }
+.suvs .btn { color: hsl(184, 100%, 22%); }
+.luxury .btn { color: hsl(179, 100%, 13%); }
+.btn:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+  outline: 2px solid hsl(0, 0%, 95%);
+}
+
+footer {
+  text-align: center;
+  margin: 48px 0 0 0;
+  color: #333;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95vw;
+    margin: 3vw auto;
+    border-radius: 16px;
+  }
+  .column {
+    padding: 6vw 3vw;
+    gap: 3vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    max-width: 95vw;
+    min-height: unset;
+    border-radius: 12px;
+  }
+  .column {
+    align-items: center;
+    text-align: center;
+    padding: 8vw 5vw;
+    gap: 4vw;
+  }
+}

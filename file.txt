@@ -1,0 +1,2 @@
+study up on attribute selectors, dropdowns, image sprotes, etc
+make 5 buttons and assign them different opacities
